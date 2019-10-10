@@ -6,10 +6,10 @@
 #include "lcd.h"                        //Inclde for LCD functionality
 
 //SPI config
-#define BOARD_SPI1_HOST         HSPI_HOST
-#define BOARD_SPI1_PIN_MISO     12
-#define BOARD_SPI1_PIN_MOSI     13
-#define BOARD_SPI1_PIN_CLK      14
+#define BOARD_INT_SPI_HOST          HSPI_HOST
+#define BOARD_INT_SPI_MISO          12
+#define BOARD_INT_SPI_MOSI          13
+#define BOARD_INT_SPI_CLK           14
 
 //Globals
 

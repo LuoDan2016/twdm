@@ -14,8 +14,8 @@
 
 //SPI config
 #define TOUCH_MHZ               2
-#define TOUCH_PIN_CS            18      //TODO: Change, also do in callbacks maybe?
-#define TOUCH_PIN_IRQ           NULL    //TODO: Change
+#define TOUCH_PIN_CS            0       //TODO: Change, also do in callbacks maybe?
+#define TOUCH_PIN_IRQ           36      //TODO: Change
 
 //Globals
 spi_device_handle_t TOUCH_SPI_HANDLE;
