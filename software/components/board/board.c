@@ -12,5 +12,5 @@ void board_init(){
         .max_transfer_sz=0
     };
     ret=spi_bus_initialize(BOARD_INT_SPI_HOST, &buscfg, 1);
-    ESP_ERROR_CHECK(ret);
+    //ESP_ERROR_CHECK(ret);
 }

@@ -15,7 +15,7 @@
 //SPI config
 #define LCD_MHZ                 40
 #define LCD_PIN_CS              15
-#define LCD_PIN_DC              27
+#define LCD_PIN_DC              2
 
 //Globals
 spi_device_handle_t LCD_SPI_HANDLE;

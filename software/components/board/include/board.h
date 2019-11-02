@@ -20,4 +20,7 @@ void board_init();
 
 //Constants
 
+//Globals
+// spi_device_handle_t LCD_SPI_HANDLE;
+
 #endif

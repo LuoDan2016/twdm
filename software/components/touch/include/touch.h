@@ -30,6 +30,8 @@ typedef struct {
 //Init
 void touch_init();
 
+void touch_irq_init(gpio_isr_t isr_handler);
+
 uint8_t touch_trans_cmd8(uint8_t cmd);
 uint16_t touch_trans_cmd16(uint16_t cmd);
 

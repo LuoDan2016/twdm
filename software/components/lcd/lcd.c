@@ -13,7 +13,7 @@ void lcd_init(){
         .queue_size=7,
         .pre_cb=lcd_pre_transfer_callback,
     };
-    ret=spi_bus_add_device(BOARD_SPI1_HOST, &lcd_devcfg, &LCD_SPI_HANDLE);
+    ret=spi_bus_add_device(BOARD_INT_SPI_HOST, &lcd_devcfg, &LCD_SPI_HANDLE);
     ESP_ERROR_CHECK(ret);
 
     //Send init commands
@@ -34,7 +34,7 @@ uint16_t lcd_get_color(uint8_t r, uint8_t g, uint8_t b) {
 
 //Draw pixel
 void lcd_draw_pixel(uint16_t x0, uint16_t y0, uint16_t color){
-    if(x0 > 320 || y0 > 240) assert(0);
+    if(x0 > 320 || y0 > 240) return;
     lcd_setwin(x0, y0, x0+1, y0+1);
     //make a pointer of uint8, reat uint16 as if it's two uint8 sequentially
     uint8_t* ptr = (uint8_t*)&color;
